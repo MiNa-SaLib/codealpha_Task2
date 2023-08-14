@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+    width: 40vw !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    .container {
+        width: 100vw !important;
+    }
+}
+
+form {
+
+    width: 100%;
+    background-image: linear-gradient(45deg, var(--bs-dark), var(--bs-teal));
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-success {
+    margin-top: 20px !important;
+}

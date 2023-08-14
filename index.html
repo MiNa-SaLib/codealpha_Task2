@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Form with recaptcha</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form method="post" onsubmit="return submitUserForm();">
+            <label for="input1" class="form-label">Name</label>
+            <input type="text" required id="input1" class="form-control">
+
+            <label for="input2" class="form-label">Email</label>
+            <input type="email" required id="input2" class="form-control">
+
+            <label for="input3" class="form-label">Password</label>
+            <input type="password" required id="input3" class="form-control">
+            <div class="g-recaptcha" data-sitekey="6LdUfqYnAAAAANI9wa37s69sLbPjMtG7vAscCF9P"
+                data-callback="verifyCaptcha"></div>
+            <div id="g-recaptcha-error"></div>
+
+            <input class="btn btn-success" type="submit" name="submit" value="Submit" />
+
+        </form>
+    </div>
+    <!-- 
+        <form >
+    
+    
+</form>
+
+     -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
