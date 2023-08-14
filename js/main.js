@@ -1,17 +1,14 @@
-
-
 let form = document.querySelector("form");
 let arr = document.querySelectorAll("input");
-let name1 = arr[0].value;
-let email = arr[1].value;
-let pass = arr[2].value;
-let all = "Name: " + name1 + "<br/>" + "email: " + email + "<br/>" + "pass " + pass;
-
 var recaptcha_response = '';
 form.onsubmit = function (e) {
-
-
     e.preventDefault();
+    console.log(arr[0].value);
+    console.log(arr[1].value);
+    console.log(arr[2].value);
+    console.log(arr);
+
+    let all = "Name: " + arr[0].value + "<br/>" + "email: " + arr[1].value + "<br/>" + "pass " + arr[2].value;
 
 
     if (recaptcha_response.length == 0) {
