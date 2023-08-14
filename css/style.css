@@ -27,3 +27,7 @@ form {
 .btn-success {
     margin-top: 20px !important;
 }
+
+.g-recaptcha {
+    margin-top: 10px
+}
